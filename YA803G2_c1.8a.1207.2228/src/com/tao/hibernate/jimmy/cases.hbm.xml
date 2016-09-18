@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.tao.hibernate.jimmy.CasesVO" table="cases" >
+        
+        <id name="caseno" column="caseno">
+            <generator class="sequence" >
+              <param name="sequence">cases_seq</param>
+            </generator>  
+        </id>
+        
+        <property name="cpno" column="cpno" />
+        <property name="spno" column="spno" />
+        <property name="locno" column="locno" />
+        <property name="discount" column="discount" />
+        <property name="stime" column="stime" />
+        <property name="etime" column="etime" />
+        <property name="minqty" column="minqty" />
+        <property name="maxqty" column="maxqty" />
+        <property name="status" column="status" />
+        <property name="casedesc" column="casedesc" />
+        <property name="ship1" column="ship1" />
+        <property name="shipcost1" column="shipcost1" />
+        <property name="ship2" column="ship2" />
+        <property name="shipcost2" column="shipcost2" />
+        
+        <many-to-one name="memberVO" class="com.tao.hibernate.jimmy.MemberVO" lazy="false">
+            <column name="memno" />
+        </many-to-one>
+        
+        <set name="orders" table="orders" lazy="false" cascade="save-update"  inverse="true"  order-by="ordno asc">			
+			<key>
+				<column name="caseno" />
+			</key>
+			<one-to-many class="com.tao.hibernate.jimmy.OrderVO" />
+		</set>
+        
+        
+    </class>
+</hibernate-mapping>
+

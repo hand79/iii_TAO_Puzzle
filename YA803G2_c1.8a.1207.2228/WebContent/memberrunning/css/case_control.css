@@ -1,0 +1,16 @@
+body {
+	background-color: white;
+}
+
+.fix-modal-open {
+	overflow: initial;
+}
+
+#pointTitle {
+	font-size: 16px;
+}
+
+#point {
+	font-size: 36px;
+	color: red;
+}

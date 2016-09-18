@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | 饕飽地圖</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<script src="js/jsIndex.js"> </script>	
+	<script>
+		$(function() {
+			$( "#tabs" ).tabs();
+		})
+	</script>	
+
+	
+	
+	
+	<STYLE>
+	   body         { background-color:white; }  
+	   
+		<!----------- 地區tab------------->
+		#area_tab{
+			float:left;
+		}
+		#area_tab table{
+			margin:0px 0px 0px 0px;
+			border-collapse: collapse;
+		}
+		#area_tab td{
+			height: 38px;
+			width: 440px;
+			margin:0px;
+			border: 1px solid white;
+			vertical-align: middle;
+			text-align: center;
+			cursor: pointer; 
+			font-family: 微軟正黑體;
+			font-weight: bold;
+			font-size: 1.1em;
+
+			background:#40403E;
+			color: grey;
+		}
+		#area_tab td:hover{
+			background: #FFCF84;
+			color: white;
+		}
+		#area_tab #current{
+			background: orange;
+			color: white;
+		}	   
+		<!----------- 最新消息燈箱------------->
+		 body { background-color:white; } 
+		   .modal-title {
+			font-weight:bold; 
+			color: #FE980F; 
+			font-family: 微軟正黑體;
+		}
+		.modal-body p span {
+			font-size: 1.5em;
+		
+		}
+		.modal-body p .total {		
+			color:#FE980F; 
+		}
+		.modal-open{
+			overflow: initial;
+		}
+		.index-tag li a {
+			padding: 8px 44px;
+			background-color:#F0F0E9;
+			color:#363432;
+		}
+		.newslist a {
+			color:#363432;
+		}
+		.alsidetag {
+			font-size: 20px;
+			font-family: 微軟正黑體;
+		}
+	</STYLE>
+</head><!--/head-->
+
+
+<body>
+	<header id="header"><!--header-->
+
+		<div style="background: red; height:0px"></div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/Logo.png" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							<div class="btn-group">
+								
+							</div>
+							
+							<div class="btn-group">
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-user"></i> 帳戶</a></li>
+								<li><a href="#"><i class="fa fa-star"></i> 願望清單</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> 結帳</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> 購物車</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> 登入</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a class="active" style="cursor: default">大台北</a></li>
+								<li><a href="#">北　區<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">大台北</a></li>
+										<li><a href="product-details.html">桃　園</a></li> 
+										<li><a href="checkout.html">新　竹</a></li> 
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="#">中　區<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+										<li><a href="blog.html">苗　栗</a></li>
+                                        <li><a href="blog.html">台　中</a></li>
+										<li><a href="blog-single.html">彰　雲</a></li>
+										<li><a href="blog-single.html">南　投</a></li>
+                                    </ul>
+                                </li>
+								<li class="dropdown"><a href="#">南　區<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog.html">嘉　南</a></li>
+										<li><a href="blog-single.html">高　屏</a></li>
+										<li><a href="blog-single.html">其　他</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="about-us.html">關於我們</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				
+			</div>
+		</div>
+	</section><!--/slider-->
+	
+	<section data-spy="scroll" data-target="#myScrollspy" >
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="brands_products"><!--brands_products-->
+						<h2 class="title text-center">教學說明</h2>
+						<div class="brands-name" id="myScrollspy">
+							<ul class="nav nav-pills nav-stacked alsidetag" id="myNav">
+								<li ><a href="#openShop"> 如何開商店</a></li>
+								<li><a href="#openCase"> 如何發起合購</a></li>
+								<li><a href="#joinCase"> 如何參加合購</a></li>
+								<li><a href="#store"> 如何儲值</a></li>
+								<li><a href="#bonus"> 積分獎勵</a></li>
+								<li><a href="#question"> 常見問題</a></li>
+
+							</ul>
+						</div>
+					</div><!--/brands_products-->
+				</div>
+				<div class="col-sm-9 padding-right">
+					<div><!--最新消息-->
+						<h2 class="title text-center" id="openShop">如何開商店</h2>
+						<div class="row">
+							<div class="col-sm-12">
+								<img src="images/read_doc/openShop.PNG" alt="" />
+							</div>							
+						</div>
+						
+						<h2 class="title text-center" id="openCase">如何發起合購</h2>
+						<div class="row">
+							<div class="col-sm-12">
+								<img src="images/read_doc/openCase.PNG" alt="" />
+							</div>							
+						</div>
+						
+						<h2 class="title text-center" id="joinCase">如何參加合購</h2>
+						<div class="row">
+							<div class="col-sm-12">
+								<img src="images/read_doc/joinCase.PNG" alt="" />
+							</div>							
+						</div>
+						
+						<h2 class="title text-center" id="store">如何儲值</h2>
+						<div class="row">
+							<div class="col-sm-12">
+								<img src="images/read_doc/store.PNG" alt="" />
+							</div>							
+						</div>
+						
+						<h2 class="title text-center" id="bonus">積分獎勵</h2>
+						<div class="row">
+							<div class="col-sm-12">
+								<img src="images/read_doc/bonus.PNG" alt="" />
+							</div>							
+						</div>
+						
+						<h2 class="title text-center" id="question">常見問題</h2>
+						<div class="row">
+							<div class="col-sm-12">
+								<img src="images/read_doc/question.PNG" alt="" />
+							</div>							
+						</div>		
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"><!--Footer-->
+	
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2014 TaoBao Puzzle Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by <span>YA803_G2</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+
+	</footer><!--/Footer-->
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#myNav").affix({
+			offset: { 
+				top: 125 
+			}
+		});
+	});
+	</script>
+		
+</body>
+</html>

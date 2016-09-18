@@ -1,0 +1,8 @@
+<%
+	if(session.getAttribute("CurrentUser") == null){
+		String qStr = request.getQueryString() == null ? "" : "?" + request.getQueryString();
+		session.setAttribute("location", request.getRequestURI() + qStr);
+		response.sendRedirect(request.getContextPath() + "/Login.jsp");
+		return;
+	}
+%>

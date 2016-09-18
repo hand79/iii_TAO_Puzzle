@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+.add-cp-btn {
+	margin-top: 25px;
+}
+
+.add-cp {
+	padding: 0px;
+}
+
+#product-price {
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+
+#casedesc {
+	height: 200px;
+}
+
+.confirm-addCP {
+	margin-top: 0px;
+}
+
+.modal-title {
+	font-weight: bold;
+	color: #FE980F;
+	font-family: 微軟正黑體;
+}
+
+.preview {
+	width: 280px;
+}
+
+#cp-desc {
+	height: 200px;
+}
+
+.modal-open {
+	overflow: initial;
+}

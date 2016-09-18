@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+.carousel-inner>div>img {
+	width: 85px;
+	height: 85px;
+	cursor: pointer;
+}
+
+pre {
+	margin: 0px 20px 0px 20px;
+}
+.modal-open {
+	overflow: auto;
+}
+
+#makeOrderModal{
+	width: 1000px;
+}
+.btn {
+font-family: 微軟正黑體;
+}
+#msgModalWindow > p{
+	font-size: 1.2em;
+	font-family: 微軟正黑體;
+	text-align: center;
+}
+
+#msgModalWindow > p > i{
+	font-size: 2em;
+	color:#FE980F;
+	margin-right: 10px;
+}

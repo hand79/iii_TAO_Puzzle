@@ -1,0 +1,19 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="Big5"%>
+<div style="height: 60px;">    
+    <% String append = request.getQueryString().replaceFirst("&whichPage=\\d+", "");%>
+  <%if (rowsPerPage<rowNumber) {%>
+    <%if(pageIndex>=rowsPerPage){%>
+    	<span>
+	        <span><A href="<%=request.getContextPath()%>/search/search.do?<%=append%>&whichPage=1">至第一頁</A>&nbsp;</span>
+	        <span><A href="<%=request.getContextPath()%>/search/search.do?<%=append%>&whichPage=<%=whichPage-1%>">上一頁 </A>&nbsp;</span>
+        </span>
+    <%}%>
+   
+    <%if(pageIndex<pageIndexArray[pageNumber-1]){%>
+    	<span class="pull-right">
+	        <span><A href="<%=request.getContextPath()%>/search/search.do?<%=append%>&whichPage=<%=whichPage+1%>">下一頁 </A>&nbsp;</span>
+	        <span><A href="<%=request.getContextPath()%>/search/search.do?<%=append%>&whichPage=<%=pageNumber%>">至最後一頁</A>&nbsp;</span>
+        </span>
+    <%}%>
+  <%}%>  
+</div>    

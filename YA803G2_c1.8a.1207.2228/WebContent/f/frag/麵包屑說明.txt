@@ -1,0 +1,45 @@
+***這裡描述的設定均需要再include該頁面前做好***
+
+
+顯示與否：
+
+若request Scope當中有 "showBreadcrumb"之attribute，且該attribute不為空(以${not empty requestScope.showBreadcrumb}判斷的)則顯示，若無則不會。
+
+基本上讓EL拿的到東西就好，所以attribute的值可以隨便給，例如new Boolean(true)
+
+
+顯示內容：
+
+需在request Scope放入一Attribute，其名稱為breadcrumbMap，型態【必須】為LinkedHashMap<String, String>
+
+其中map的key為"要顯示的字串"，value為"超連結字串"。
+
+顯示時依照加入map的順序，先加入的先顯示。
+
+map的最後一筆不會顯示超連結，因此value可以給空字串就好。
+
+若map為空的或者沒有這個attriubte則只會顯示最上層的Home
+
+
+範例：
+
+<% 
+
+request.setAttribute("showBreadcrumb", new Object());
+
+LinkedHashMap<String, String> breadmap = new LinkedHashMap<String, String>();
+breadmap.put("甜點餅乾", request.getContextPath() + "/Search.do?catno=9999");
+breadmap.put("巧克力", "");
+request.setAttribute("breadcrumbMap", breadmap);
+
+%>
+
+<jsp:include page="/f/frag/f_header2_with_breadcrumb.jsp"/>
+
+
+顯示結果為：
+
+Home > 甜點餅乾 > 巧克力  
+
+其中Home與甜點餅乾可以點選。
+

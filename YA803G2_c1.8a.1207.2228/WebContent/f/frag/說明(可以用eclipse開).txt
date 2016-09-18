@@ -1,0 +1,53 @@
+======前端頁面Fragment說明=======
+
+(((f_header1.jsp)))
+-------------
+最上方片段，包含引入Bootstrap的CSS
+
+
+>>>> 在這裡插入<title></title>以及自訂CSS <<<<
+
+
+
+(((f_header2_with_breadcrum.jsp)))
+-------------
+!!! 由</head>開始，</header>結束 !!!
+【breadcrum顯示與否由參數控制，若沒有setAttribute則不會顯示。內容也是。】
+【詳細設定請見麵包屑說明.txt】
+
+******以上為頁面上方部分，以下為自訂頁面********
+
+自訂頁面由<section>開始，由相對的</section>結束。當中可以引入menu
+
+<section>
+	<div class="container">
+		<div class="row">
+		
+		
+(Optional) f_catMenu.jsp  分類選單
+-------------
+!!! 由<div class="col-sm-3">開始</div><!--.col-sm-3-->結束 !!!
+
+(Optional) f_memCenterMenu.jsp  會員中心選單
+-------------
+!!! 由<div class="col-sm-3">開始</div><!--.col-sm-3-->結束 !!!
+頁面會從session去取MemberVO，判斷使用者是一般會員還是商店會員，然後顯示對應的選單
+目前使用者類型先寫死在頁面裡面，類型為一般會員(type=0)，若有需要做測試可自行改成type=1
+之後等登入驗證做完再改回動態的
+
+		</div>
+	</div>
+</section>
+
+******以上為自訂頁面，以下為頁面下方部分********
+
+(((f_footer1.jsp)))
+-------------
+由<footer>開始
+
+>>>>>在這裡插入自訂的js<<<<<<<<
+
+
+(((f_footer2.jsp)))
+-------------
+內容只有</body></html>，也可以不要include自己寫在JSP裡面

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.tao.hibernate.jimmy.OrderVO" table="orders" >
+        
+        <id name="ordno" column="ordno">
+            <generator class="sequence" >
+              <param name="sequence">orders_seq</param>
+            </generator>  
+        </id>
+        
+        <property name="qty" column="qty" />
+        <property name="price" column="price" />
+        <property name="ordtime" column="ordtime" />
+        <property name="status" column="status" />
+        <property name="brate" column="brate" />
+        <property name="brateDesc" column="bratedesc" />
+        <property name="crate" column="crate" />
+        <property name="crateDesc" column="cratedesc" />
+        <property name="ship" column="ship" />
+       
+        <many-to-one name="bmemvo" class="com.tao.hibernate.jimmy.MemberVO" lazy="false" cascade="save-update">
+            <column name="bmemno" />
+        </many-to-one>
+        <many-to-one name="cmemvo" class="com.tao.hibernate.jimmy.MemberVO" lazy="false" cascade="save-update">
+            <column name="cmemno" />
+        </many-to-one>
+        <many-to-one name="casevo" class="com.tao.hibernate.jimmy.CasesVO" lazy="false" cascade="save-update">
+            <column name="caseno" />
+        </many-to-one>
+        
+    </class>
+</hibernate-mapping>
+

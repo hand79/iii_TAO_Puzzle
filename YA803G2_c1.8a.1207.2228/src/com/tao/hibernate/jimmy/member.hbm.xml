@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.tao.hibernate.jimmy.MemberVO" table="member" >
+        
+        <id name="memno" column="memno">
+            <generator class="sequence" >
+              <param name="sequence">member_seq</param>
+            </generator>  
+        </id>
+        
+        <property name="memid" column="memid" />
+        <property name="fname" column="fname" />
+        <property name="lname" column="lname" />
+        <property name="idnum" column="idnum" />
+        <property name="gender" column="gender" />
+        <property name="tel" column="tel" />
+        <property name="email" column="email" />
+        <property name="money" column="money" />
+        <property name="withhold" column="withhold" />
+        
+        
+    </class>
+</hibernate-mapping>
+

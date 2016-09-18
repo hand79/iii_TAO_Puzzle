@@ -1,0 +1,26 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="Big5"%>
+<table border="0">    
+ <tr>
+ <ul class="pagination"> 
+  <%if (rowsPerPage<rowNumber) {%>
+    <%if(pageIndex>=rowsPerPage){%>
+        <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
+        <A href="<%=request.getContextPath()%>/shop/shop.do?whichPage=<%=whichPage-1%>&action=listShop_ByCompositeQuery">
+        &laquo;</A>&nbsp;</li>
+    <%}%>
+  
+	<%for (int i=1; i<=pageNumber; i++){%>
+         <li class="paginate_button " aria-controls="dataTables-example" tabindex="0">
+         <A href="<%=request.getContextPath()%>/shop/shop.do?whichPage=    <%=i%>&action=listShop_ByCompositeQuery">
+         <%=i%></A>&nbsp;<li>
+    <%}%>
+  
+    <%if(pageIndex<pageIndexArray[pageNumber-1]){%>
+        <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
+        <A href="<%=request.getContextPath()%>/shop/shop.do?whichPage=<%=whichPage+1%>&action=listShop_ByCompositeQuery">
+        &raquo;</A>&nbsp;</li>
+    <%}%>
+  <%}%>  
+</ul>
+ </tr>
+</table> 

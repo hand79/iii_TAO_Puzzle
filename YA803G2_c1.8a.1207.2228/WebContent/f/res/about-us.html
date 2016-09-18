@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>商店 | 饕飽地圖</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<script src="js/jsIndex.js"> </script>	
+	<script>
+	
+		$(function() {
+			$("#tabs" ).tabs();
+		})
+		
+
+
+	</script>
+</head><!--/head-->
+<style>
+<!----------- 地區tab by Alex------------->
+body         { background-color:white; }  
+#area_tab{
+	float:left;
+}
+#area_tab table{
+	margin:0px 0px 0px 0px;
+	border-collapse: collapse;
+}
+#area_tab td{
+	height: 38px;
+	width: 440px;
+	margin:0px;
+	border: 1px solid white;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer; 
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	font-size: 1.1em;
+
+	background:#40403E;
+	color: grey;
+}
+#area_tab td:hover{
+	background: #FFCF84;
+	color: white;
+}
+#area_tab #current{
+	background: orange;
+	color: white;
+}	
+
+<!----------- Cathy CSS------------->
+.columns{
+	height:100px;
+}
+.shopbrief, .shopbrief *{
+	padding:0px;
+}
+.shoptitle{
+	font-size:40px;
+	font-weight:bold;
+	font-family:'Roboto', sans-serif,微軟正黑體;
+	color:#FE980F;
+}
+.command{
+	background-color:#DDDDDD;
+	border:5px;
+}
+.navis{
+	height:0px;
+}
+.join-buy button:hover{
+  background: #2AB33A;
+  border: 0 none;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+.product-buy button:hover{
+  background:#2BBDF6;
+  border: 0 none;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+
+.navigs .navig li a {
+  background:#FFFFFF;
+  color: #FE980F;
+  padding: 3px 7px;
+}
+
+.navigs .navig li a:after {
+  border-color:transparent;
+}
+
+.navigs .navig > li + li:before {
+  content:">";
+}
+.single-products img{
+	height:150px;
+	weight:120px;
+}
+.prduct-meta li i:after{
+	border-color:transparent;
+}
+.media-meta {
+	background: white;
+}
+
+</style>
+
+<body>
+	<header id="header"><!--header-->
+
+		<div style="background: red; height:0px"></div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/Logo.png" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							<div class="btn-group">
+								
+							</div>
+							
+							<div class="btn-group">
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-user"></i> 帳戶</a></li>
+								<li><a href="#"><i class="fa fa-star"></i> 願望清單</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> 結帳</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> 購物車</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> 登入</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a class="active" style="cursor: default">大台北</a></li>
+								<li><a href="#">北　區<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">大台北</a></li>
+										<li><a href="product-details.html">桃　園</a></li> 
+										<li><a href="checkout.html">新　竹</a></li> 
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="#">中　區<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+										<li><a href="blog.html">苗　栗</a></li>
+                                        <li><a href="blog.html">台　中</a></li>
+										<li><a href="blog-single.html">彰　雲</a></li>
+										<li><a href="blog-single.html">南　投</a></li>
+                                    </ul>
+                                </li>
+								<li class="dropdown"><a href="#">南　區<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog.html">嘉　南</a></li>
+										<li><a href="blog-single.html">高　屏</a></li>
+										<li><a href="blog-single.html">其　他</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="about-us.html">關於我們</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	 
+	 <div id="contact-page" class="container">
+    	<div class="bg">
+	    	<div class="row">    		
+	    		<div class="col-sm-12">    			   			  			    				    				
+						<section id="cart_items">
+							<div class="container">
+								<div class="breadcrumbs">
+									<ol class="breadcrumb">
+									  <li><a href="#">Home</a></li>
+									  <li class="active">關於我們</li>
+									</ol>
+								</div>
+								<h2 class="title text-center">About <strong>Us</strong></h2>   
+								
+
+								<div class="table-responsive cart_info">
+									<table class="table table-condensed"　>
+
+										<tbody>
+											<tr style="font-family: 微軟正黑體;">
+												<td class="cart_product" style="color:#FE980F;">
+													<h2>緣起</h2> 
+												</td>
+												<td class="cart_product" style="font-size: 1.2em;">
+													我們對於生活的體驗往往是第二輪的 －張愛玲〈童言無忌〉
+												</td>
+												<td class="cart_product" style="font-size: 1.2em;">
+													上班生活煩悶壓抑，碌碌終日，好不容易下班卻已經累得哪都不想去。</br>
+													那就讓饕飽拼圖成為你調劑身心的好幫手，給你新鮮豐富完整的一手資訊，進一步創造第二輪的體驗與記憶。
+
+												</td>
+											</tr>
+
+
+											<tr style="font-family: 微軟正黑體;">
+												<td class="cart_product" style="color:#FE980F;">
+													<h2>目標</h2> 
+												</td>
+												<td class="cart_product" style="font-size: 1.2em;">
+													讓喜歡合購美食的上班族能夠有個網路平台來進行合購，不必自己處理繁瑣的合購細節。
+												</td>
+												<td class="cart_product" style="font-size: 1.2em;">
+													以合購為主的銷售方式，店家可以在平台上開設商店並且提供產品清單，方便使用者建立合購案。
+
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</section> <!--/#cart_items-->
+				</div>
+			</div>			 		
+		</div>    	
+    		<div class="row">  	
+	    		<div class="col-sm-12" >
+	    			<div class="contact-info">
+	    				<h2 class="title text-center">Contact Info</h2>
+	    				<address style="font-family: 微軟正黑體;">
+	    					<p>TaoBao Puzzle Inc.</p>
+							<p>Class: YA803</p>
+							<p>Group: No.2</p>
+							<p>Memeber: 廖駿銘、李孟儒、曾欽緹、張寧馨、鄒岡諺、陳冠翰</p>
+	    				</address>
+						<h2>　</h2>
+	    			</div>
+    			</div>    			
+	    	</div>  
+    </div><!--/#contact-page-->
+	
+	<footer id="footer"><!--Footer-->
+	
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2014 TaoBao Puzzle Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by <span>YA803_G2</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

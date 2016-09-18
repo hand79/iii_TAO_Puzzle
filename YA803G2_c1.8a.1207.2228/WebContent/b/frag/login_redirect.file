@@ -1,0 +1,6 @@
+<%	
+	if(session.getAttribute("bAccount")==null){
+		response.sendRedirect(request.getContextPath()+"/b/backlogin.jsp");
+		return;	
+	}
+%>

@@ -1,0 +1,62 @@
+@CHARSET "BIG5";
+
+.columns{
+	height:100px;
+}
+.shopbrief, .shopbrief *{
+	padding:0px;
+}
+.shoptitle{
+	font-size:40px;
+	font-weight:bold;
+	font-family:'Roboto', sans-serif,微軟正黑體;
+	color:#FE980F;
+}
+.command{
+	background-color:#DDDDDD;
+	border:5px;
+}
+.navis{
+	height:0px;
+}
+.join-buy button:hover{
+  background: #2AB33A;
+  border: 0 none;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+.product-buy button:hover{
+  background:#2BBDF6;
+  border: 0 none;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+
+.navigs .navig li a {
+  background:#FFFFFF;
+  color: #FE980F;
+  padding: 3px 7px;
+}
+
+.navigs .navig li a:after {
+  border-color:transparent;
+}
+
+.navigs .navig > li + li:before {
+  content:">";
+}
+
+.prduct-meta li i:after{
+	border-color:transparent;
+}
+.media-meta {
+	background: white;
+}
+#asideTable tr,td{
+	text-align: left;
+	font-family: sans-serif, "微軟正黑體";
+	padding:3px 7px;
+}
+.pointer{
+cursor: pointer;
+}
