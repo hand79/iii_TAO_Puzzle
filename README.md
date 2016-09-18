@@ -2,17 +2,11 @@
 YA803_饕飽拼圖_Institute for Information Industry(中壢資策會)Project
 
 Programming language: Java
-
 Framework: Hibernate
-
 Database: Oracle
-
 Web: HTML5, CSS3, HTML, JSP, Servlet, javascript, jQuery, CSS
-
 Application Server: Tomcat
-
 Mobile: Android
-
 Integration Design Environment: Eclipse
 
 饕飽拼圖介紹
