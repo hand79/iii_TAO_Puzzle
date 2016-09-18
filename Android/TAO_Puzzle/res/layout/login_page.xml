@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="395dp"
+    android:layout_height="425dp"
+    android:background="#ffffff"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <ImageView
+        android:id="@+id/memberimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginBottom="179dp"
+        android:layout_marginRight="124dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/casecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addwish"
+        android:layout_alignLeft="@+id/membermoney"
+        android:layout_marginBottom="80dp"
+        android:text="帳號:" />
+
+    <TextView
+        android:id="@+id/membermoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/casecount"
+        android:layout_marginTop="42dp"
+        android:layout_toLeftOf="@+id/memberimage"
+        android:text="密碼" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/membermoney"
+        android:layout_alignBottom="@+id/membermoney"
+        android:layout_alignLeft="@+id/Account"
+        android:layout_alignRight="@+id/Account"
+        android:ems="10"
+        android:hint="請輸入密碼"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/addwish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Account"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@+id/casecount"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape"
+        android:text="送出" />
+
+    <EditText
+        android:id="@+id/Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/casecount"
+        android:layout_alignBottom="@+id/casecount"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="請輸入帳號" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

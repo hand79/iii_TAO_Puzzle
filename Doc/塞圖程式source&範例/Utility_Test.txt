@@ -1,0 +1,2 @@
+{'name':'test','blob':{'pic':'mime'},'pkColumn':'num'};
+{'name':'test2','blob':{'pic1':'mime1', 'pic2':'mime2'},'pkColumn':'pk'};

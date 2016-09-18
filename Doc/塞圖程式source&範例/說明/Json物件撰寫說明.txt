@@ -1,0 +1,15 @@
+描述表格的Json物件有三個屬性：name, blob ,pkColumn
+
+name為表格名稱(要跟資料庫的表格名稱一樣)
+
+pkColumn為做為主鍵的欄位名稱
+
+blob為一個子物件，裡面用key:value的形式描述"存圖片的欄位"："存圖片MIME type的欄位" (會被轉換成java.util.Map<String, String>)
+
+
+例如有一個表格叫test2，他預計每筆紀錄會存兩張圖，存在pic1及pic2兩個欄位。這兩張圖的MIME type則存在mime1和mime2這兩個欄位
+這張表格的主鍵欄位名稱叫做pk，則test2用以下Json物件描述：
+
+{'name':'test2',
+ 'blob':{'pic1':'mime1', 'pic2':'mime2'},
+ 'pkColumn':'pk'};

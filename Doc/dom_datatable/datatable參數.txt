@@ -1,0 +1,13 @@
+
+$('#dataTables-example').dataTable(
+		{ 	bLengthChange:false,     
+			bPaginate:false,
+			bInfo:false,
+			bFilter:false
+					}
+			);
+			
+1.顯示頁數
+2.換頁
+3.tabel資訊
+3.搜尋濾器			

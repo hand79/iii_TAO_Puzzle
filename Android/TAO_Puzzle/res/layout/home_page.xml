@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/shopsearch"
+        android:layout_width="165dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/mapsearch"
+        android:layout_alignTop="@+id/membercenter"
+        android:src="@drawable/shopsearch" />
+
+    <ImageView
+        android:id="@+id/date"
+        android:layout_width="165dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/shopsearch"
+        android:layout_alignTop="@+id/money"
+        android:src="@drawable/showpic" />
+
+    <ImageView
+        android:id="@+id/mapsearch"
+        android:layout_width="165dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/shopsearch"
+        android:layout_toRightOf="@+id/thingsearch"
+        android:src="@drawable/mapsearch" />
+
+    <ImageView
+        android:id="@+id/memberimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/news" />
+
+    <ImageView
+        android:id="@+id/membercenter"
+        android:layout_width="165dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/thingsearch"
+        android:layout_toLeftOf="@+id/shopsearch"
+        android:src="@drawable/membercenter" />
+
+    <ImageView
+        android:id="@+id/money"
+        android:layout_width="165dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/shopsearch"
+        android:layout_toLeftOf="@+id/shopsearch"
+        android:src="@drawable/money" />
+
+    <ImageView
+        android:id="@+id/thingsearch"
+        android:layout_width="165dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/memberimage"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/thingsearch" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thingsearch"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar1"
+        android:layout_toRightOf="@+id/memberimage"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="點擊觀看官方最新消息!!!    TAO_Puzzle饕飽拼圖12月7日上市"
+        android:textColor="@color/blue"
+        android:textSize="20dp" />
+
+</RelativeLayout>

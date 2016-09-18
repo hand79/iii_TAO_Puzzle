@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <AutoCompleteTextView
+        android:id="@+id/mapword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:textColorHighlight="#ffffff"
+        android:hint="請輸入關鍵字" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <ImageView
+        android:id="@+id/mapbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mapword"
+        android:layout_toRightOf="@+id/mapword"
+        android:src="@drawable/greensearchicon" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar01"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mapbt"
+        android:minHeight="5dip"
+        android:progressDrawable="@drawable/processbar_style" />
+
+    <fragment
+        android:id="@+id/fmMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ProgressBar01"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>

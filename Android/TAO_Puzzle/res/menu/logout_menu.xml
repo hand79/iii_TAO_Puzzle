@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Android 3.0+開始主選單選項不會顯示icon，所以無需設定；但子選單選項仍可顯示icon -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+        
+        <item
+        android:id="@+id/exit"
+        android:title="@string/logoutmenu"/>
+    
+</menu>

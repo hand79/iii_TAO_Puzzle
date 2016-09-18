@@ -1,0 +1,5 @@
+{'name':'member','blob':{'photo':'mime'},'pkColumn':'memno'};
+{'name':'runningad','blob':{'adpic':'mime'},'pkColumn':'adno'};
+{'name':'shop','blob':{'pic':'picmime'},'pkColumn':'shopno'};
+{'name':'shopproduct','blob':{'pic1':'pmime1', 'pic2':'pmime2', 'pic3':'pmime3'},'pkColumn':'spno'};
+{'name':'caseproduct','blob':{'pic1':'pmime1', 'pic2':'pmime2', 'pic3':'pmime3'},'pkColumn':'cpno'};

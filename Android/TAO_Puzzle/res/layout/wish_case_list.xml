@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/casetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/wishcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/casetitle"
+        android:layout_below="@+id/casetitle"
+        android:text="TextView"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/casestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wishcount"
+        android:layout_below="@+id/wishcount"
+        android:text="TextView"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/wishprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/casestatus"
+        android:layout_below="@+id/casestatus"
+        android:text="TextView"
+        android:textColor="@color/red" />
+
+</RelativeLayout>

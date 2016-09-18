@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Android 3.0+開始主選單選項不會顯示icon，所以無需設定；但子選單選項仍可顯示icon -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/dessert_and_cake"
+        android:title="@string/dessert_and_cake" />
+    <item
+        android:id="@+id/cookie"
+        android:title="@string/cookie"/>
+    <item
+        android:id="@+id/snack"
+        android:title="@string/snack"/>
+    <item
+        android:id="@+id/vegetables"
+        android:title="@string/vegetables"/>
+    <item
+        android:id="@+id/ice"
+        android:title="@string/ice"/>
+	
+    
+      <item
+        android:id="@+id/fast_food_restaurant"
+        android:title="@string/fast_food_restaurant"/>
+      
+        <item
+        android:id="@+id/health_food"
+        android:title="@string/health_food"/>
+        
+        <item
+        android:id="@+id/exit"
+        android:title="@string/exit"/>
+    
+</menu>

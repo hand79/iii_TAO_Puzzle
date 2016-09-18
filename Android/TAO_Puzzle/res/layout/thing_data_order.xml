@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:textSize = "18sp"
+        android:textColor="@color/blue"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/productdesc"
+        android:layout_alignLeft="@+id/address"
+        android:layout_alignRight="@+id/address"
+        android:layout_below="@+id/address"
+        android:background="@drawable/littleblue"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/productdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/spec3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/green"
+        android:textSize="18sp" 
+        android:text="交貨方式" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ordsts"
+        android:layout_below="@+id/ordsts"
+        android:layout_marginTop="42dp"
+        android:text="請輸入數量" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/green"
+        android:text="金額" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/blue"
+        android:text="我願意遵守，會員規定" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/productdesc"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:minHeight="20dp"
+        android:text="送出訂單"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/spinner2"
+        android:textColor="@color/red"
+         android:layout_marginRight="5dp"
+                 android:layout_marginTop="8dp"
+        android:text="123213" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toLeftOf="@+id/textView8"
+        android:layout_toRightOf="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spec3"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_below="@+id/spec3"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/ordsts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="21dp"
+        android:textColor="@color/red"
+        android:textSize="18sp" 
+        android:text="目前剩餘餘額" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:textColor="@color/green"
+        android:layout_marginTop="10dp"
+        android:text="運費" />
+
+</RelativeLayout>

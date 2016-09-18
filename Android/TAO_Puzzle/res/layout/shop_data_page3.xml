@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/memberimage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/caseprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/addwish"
+        android:layout_toRightOf="@+id/memberimage"
+        android:textColor="@color/green"
+        android:text="TextView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:progressDrawable="@drawable/processbar_style"
+        android:minHeight="5dip"
+        android:layout_below="@+id/memberimage" />
+
+    <TextView
+        android:id="@+id/gogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/memberimage"
+        android:layout_alignLeft="@+id/caseprice"
+        android:layout_alignRight="@+id/addwish"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/blue"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/addwish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/caseprice"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/diebutton"
+        android:minHeight="15dp"
+        android:text="檢舉此合購"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/caselistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progressBar1" >
+
+    </ListView>
+
+</RelativeLayout>

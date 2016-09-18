@@ -1,0 +1,41 @@
+1. 用eclipse匯入專案JDBCUtility (方便偵錯用)
+
+2. 執行程式
+
+3. 先按最上方的Load Table Info，然後指定存有描述table JSON物件的文字檔
+
+4. 再按Open Pic Folder，指定存有圖片的資料夾。(資料夾結構請參閱下方說明)
+
+5. 按Write to DB將圖送進資料庫。
+
+
+
+
+
+
+
+圖片資料夾結構說明：
+
+
+所指定的資料夾"內"，必須包含與所要插入圖片的表格名稱相同(和json物件提供的名稱一樣，大小寫有別)的子資料夾(稱為table資料夾)，
+
+例如今天要將圖片插入test及test2兩個表格，則該資料夾內就必須有test及test2這兩個資料夾。
+
+每個table資料夾裡面再照要插入圖片的Row數建立子資料夾(稱為row資料夾)，一個row一個資料夾。在插入圖片的時候會由字母順序較先的資料夾先進行插入。
+
+每個row資料夾裡面放入想要插入的圖片，程式會依照字母順序插入資料庫。
+
+資料夾結構可以參考所附的Utility_Test資料夾。
+
+注意：利用程式指定的為table資料夾的上一層，即包含有table資料夾們的母資料夾，而非指定某一個table資料夾。
+
+
+
+
+範例操作說明：
+
+1. 先在資料庫上執行Utility_Test.sql建立表格
+2. 執行程式
+3. Load Table Info選擇Utility_Test.txt
+4. Open Pic Folder選擇Utility_Test資料夾
+5. Write to DB

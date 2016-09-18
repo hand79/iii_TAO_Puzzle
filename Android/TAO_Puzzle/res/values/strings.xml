@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TAO_Puzzle</string>
+    <string name="member_center">會員中心</string>
+    <string name="msgErrorUserOrPassword">帳號或密碼不可空白!</string>
+    <string name="msgNoCameraApp">你的手機沒有拍照APP拉!!!</string>
+    
+     <string name="qatitle">送出問題</string>
+      <string name="cleartitle">清空文字</string>
+       <string name="ordertitle">參與合購</string>
+     <string name="savemoney">儲值代幣</string>
+     <string name="wish">追蹤合購</string>
+     <string name="del">檢舉合購</string>
+     <string name="change">更換照片</string>
+     <string name="logout">登出</string>
+     
+      <string name="submit">確定</string>
+      <string name="cancel">取消</string>
+      
+      
+         <string name="qadesc">你確定要送出此問題?</string>
+      <string name="cleanerstring">你確定要清空文字嗎?</string>
+      <string name="addorder">你確定要購買嗎?</string>
+       <string name="addmoney">你確定要儲值嗎?</string>
+       <string name="addwish">你確定追蹤此合購嗎?</string>
+       <string name="delcase">你確定要檢舉此合購嗎?</string>
+        <string name="del2case">你真的確定要檢舉此合購嗎???</string>
+         <string name="changeimage">你真的要更換照片嗎?</string>
+         <string name="logoutdesc">你確定要登出嗎?</string>
+         <string name="logoutmenu">登出</string>
+    <string-array name="credit_card">
+	    <item>Master Card</item>
+	    <item>VISA</item>
+	    <item>JCB</item>
+	    
+    </string-array>
+    
+    
+     <string name="dessert_and_cake">甜點蛋糕</string>
+    <string name="cookie">餅乾零食</string>
+    <string name="snack">小吃特產</string>
+    <string name="vegetables">蔬果食材</string>
+    <string name="ice">飲料冰品</string>
+    <string name="fast_food_restaurant">速食料理</string>
+    <string name="health_food">營養保健</string>
+    <string name="exit">回到導覽頁面</string>
+    
+    
+    
+    
+</resources>

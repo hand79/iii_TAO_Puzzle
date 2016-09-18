@@ -1,0 +1,89 @@
+
+2014-11-19v2
+====
+runningAd table 增加 cases的caseno為FK, 已經修改create table & 假資料. 
+
+2014-11-19
+====
+更新dpsord與wtdreq表格欄位型態，
+並更新此兩個表格的假資料
+
+
+2014-11-16
+====
+order表格新增欄位ship，紀錄該筆訂單所選的交貨方式
+
+2014-11-15
+====
+為member表格之money、withhold欄位加上constraint CHECK >0
+
+2014-11-14_v1
+====
+更動shop.shop_desc 為CLOB，not null限制拿掉
+
+
+2014-11-14
+====
+更動後端帳號與權限清單表格的假資料
+
+
+
+2014-11-13
+====
+CaseProduct表格之cpdesc欄位型態改為CLOB
+
+
+2014-11-11
+====
+CaseProduct表格新增欄位"LockFlag"
+調整合購案表格錯誤的假資料
+新增調整資料一致性的update語法，會出錯是正常的不用理他
+
+
+
+2014-11-08
+====
+修正假資料的FK對應(!!!!尚未測試正確性!!!!)
+後端管理帳號表格(ACC)增加欄位email
+移除location_seq
+一些細微調整
+
+
+
+2014-11-04
+====
+改變部分欄位名稱及型態
+TABLE CASEREP
+REPNO               NUMBER NOT NULL,
+SUSNO               NUMBER NOT NULL,
+
+TABLE SHOPREP
+REPNO               NUMBER NOT NULL,
+--
+新增一些假資料:
+CaseProduct
+CaseRep
+ShopRep
+
+
+2014-11-02
+====
+SHOP.SHOPNO NUMBER 欄位長度拿掉
+SHOP.LOCNO  NUMBER 欄位長度拿掉
+SHOP.LNG    NUMBER 欄位長度要給(10,7)
+SHOP.LAT    NUMBER 欄位長度要給(10,7)
+
+SHOPPRODUCT.SPNO   欄位長度拿掉
+SHOPPRODUCT.SHOPNO 欄位長度拿掉,Constraint 加上NOT NULL
+
+
+
+更動Cases表格：
+
+--新增欄位Threshold
+--更改ShipCose1 & ShipCost2欄位長度由5->10
+
+更動Orders表格：
+
+bRate欄位增加check( bRate >= 0)
+cRate欄位增加check( cRate >= 0)

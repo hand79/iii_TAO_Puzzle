@@ -1,0 +1,1 @@
+{'name':'caseproduct','blob':{'pic1':'pmime1', 'pic2':'pmime2', 'pic3':'pmime3'},'pkColumn':'cpno'};

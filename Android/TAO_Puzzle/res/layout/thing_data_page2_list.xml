@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/green"
+        android:text="取貨方式 :" />
+
+    <TextView
+        android:id="@+id/ship2page2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ship1page2"
+        android:layout_alignBottom="@+id/ship1page2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/red"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ship1page2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/address"
+        android:layout_below="@+id/address"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/productdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/address"
+        android:layout_below="@+id/ship1page2"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/green"
+        android:text="合購案簡述 :" />
+
+    <TextView
+        android:id="@+id/casedescriptionpag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/productdesc"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/productdesc"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/blue"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/minqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/casedescriptionpag2"
+        android:layout_below="@+id/casedescriptionpag2"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/green"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/maxqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/minqty"
+        android:layout_alignBottom="@+id/minqty"
+        android:layout_alignLeft="@+id/ship2page2"
+        android:textColor="@color/red"
+        android:text="TextView" />
+
+</RelativeLayout>

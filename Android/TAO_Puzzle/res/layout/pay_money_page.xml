@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/description" />
+
+    <ListView
+        android:id="@+id/moneylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/creditbt"
+        android:layout_below="@+id/progressBar1"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addwish"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:text="選擇儲值金額"
+        android:textColor="@color/blue" />
+
+    <Button
+        android:id="@+id/creditbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addwish"
+        android:layout_alignBottom="@+id/addwish"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="37dp"
+        android:background="@drawable/shape"
+        android:textColor="@android:color/white"
+        android:text="信用卡儲值" />
+
+    <Button
+        android:id="@+id/addwish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/shape"
+        android:textColor="@android:color/white"
+        android:text="ATM儲值" />
+
+</RelativeLayout>

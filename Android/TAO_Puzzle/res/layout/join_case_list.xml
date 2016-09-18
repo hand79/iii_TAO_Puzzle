@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/ordertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/joinstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/jointime"
+        android:layout_alignBottom="@+id/jointime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/joincount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/joinprice"
+        android:layout_alignLeft="@+id/joinstatus"
+        android:layout_alignRight="@+id/joinstatus"
+        android:text="TextView"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/joinprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ordertitle"
+        android:layout_below="@+id/ordertitle"
+        android:text="TextView"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/jointime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/joinprice"
+        android:layout_below="@+id/joinprice"
+        android:text="TextView"
+        android:textColor="@color/red" />
+
+</RelativeLayout>

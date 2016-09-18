@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/memberimage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/thingpage2member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/memberimage"
+        android:textColor="@color/green"
+        android:text="TextView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:progressDrawable="@drawable/processbar_style"
+        android:minHeight="5dip"
+        android:layout_below="@+id/memberimage" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/black"
+        android:minHeight="55dp" />
+
+    <TextView
+        android:id="@+id/page2starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ordsts"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/ordsts"/>
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button01"
+        android:layout_alignBottom="@+id/Button01"
+        android:layout_alignRight="@+id/addwish"
+        android:background="@drawable/shape"
+        android:minHeight="15dp"
+        android:text="我要合購"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/ordsts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Button02"
+        android:layout_toLeftOf="@+id/thingpage2title"
+        android:text="倒數計時"
+        android:textColor="@color/gray"
+        android:textSize="10sp" />
+
+    <ListView
+        android:id="@+id/page2listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button01"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progressBar1" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/thingpage2title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/memberimage"
+        android:layout_alignLeft="@+id/thingpage2member"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="3dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/addwish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/thingpage2member"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/shopbutton"
+        android:minHeight="15dp"
+        android:text="追蹤+"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>
